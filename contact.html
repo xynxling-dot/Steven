@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Regale</title>
+<meta name="description" content="Send Regale your event date and guest count for a catering proposal.">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="logotype">Reg<em>ale Catering Republic</em></a>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="kicker">Contact</span>
+      <h1>Tell us the date and the headcount</h1>
+      <p>We reply within one business day with a catering menu proposal shaped around your event.</p>
+    </div>
+  </section>
+
+    <section>
+      <div class="wrap">
+        <div class="contact-grid">
+          <div>
+            <form id="contact-form" novalidate>
+              <div class="field-row">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input type="text" id="name" name="name" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="event-date">Event date</label>
+                <input type="date" id="event-date" name="event-date">
+              </div>
+              <div class="field">
+                <label for="guests">Estimated guests</label>
+                <input type="number" id="guests" name="guests" min="1" placeholder="e.g. 120">
+              </div>
+            </div>
+            <div class="field">
+              <label for="interest">Interested in</label>
+              <select id="interest" name="interest">
+                <option value="catering">Catering only</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Tell us about the occasion</label>
+              <textarea id="message" name="message" placeholder="Venue, style of service, guest count, and anything else useful."></textarea>
+            </div>
+            <button type="submit" class="btn">Send enquiry</button>
+            <div class="form-msg" id="form-msg"></div>
+          </form>
+        </div>
+
+        <div class="contact-info">
+          <div class="block">
+            <h3>Location</h3>
+            <p>Brgy Ibaba, Sta.Rosa Laguna</p>
+          </div>
+          <div class="block">
+            <h3>Direct</h3>
+            <p><a href="mailto:YOUR-EMAIL@example.com">steven.mesias@deped.gov.ph</a><br>
+            <a href="tel:+639000000000">+639757195964</a></p>
+          </div>
+          <div class="block">
+            <h3>Availability</h3>
+            <p>Anytime<br>Tastings and catering consultations by appointment</p>
+          </div>
+          <div class="map-note">
+            <strong>Map placeholder —</strong> drop in a Google Maps or Mapbox embed here once you have an API key, using the office address above.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logotype">Reg<em>ale</em></div>
+        <p>Fine catering for weddings, galas, and private occasions, under one house.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="services.html#catering">Catering menus</a></li>
+          <li><a href="about.html">About Regale</a></li>
+          <li><a href="contact.html">Contact &amp; enquiries</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Reach us</h4>
+        <ul>
+          <li>steven.mesias@deped.gov.ph</li>
+          <li>+638757195964</li>
+          <li>Brgy Ibaba &amp; Sta.Rosa Laguna</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Regale Catering Republic.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
